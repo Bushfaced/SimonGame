@@ -1,7 +1,7 @@
 //*********/ CONSTANTS *****************/
-
+const colorChoices = [0, 1, 2]; //this holds the array for the possible choices
 //*********/ STATE VARIABLES ***********/
-let rounds;
+let levels;
 let intervals;
 let loseCondition;
 let playerChoices;
@@ -15,12 +15,3 @@ document.querySelector('main').addEventListener('click', handleButton)
 
 // ******function********* //
 
-function init() {
-    
-};
-
-
-
-function handleButton() {
-
-}
