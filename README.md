@@ -1,4 +1,6 @@
-Simon Says: Repeat the light sequence displayed by the computer. Simon was an electronic game with flashing lights in conjunction with audible tone that launched in 1978 at Studio 54 in New York City. It was an immediate success, becoming a pop culture symbol of the 1970s and 1980s until it's popularity waned in the 1990s. 
+Simon Says: 
+    Rules: Repeat the light sequence displayed by the computer and advance to the next level, or you lose the game. Each level will add to the amount of lights displayed in sequence and decrease the interval the light is displayed for at each stage. The user must mimick the sequence until they beat the last level. The last level on this version is currently level 15.
+    History: Simon was an electronic game with flashing lights in conjunction with audible tone that launched in 1978 at Studio 54 in New York City. It was an immediate success, becoming a pop culture symbol of the 1970s and 1980s until it's popularity waned in the 1990s. 
 
 ☐ Screenshot(s): Images of your actual game.
 
@@ -6,5 +8,5 @@ Simon Says: Repeat the light sequence displayed by the computer. Simon was an el
 
 ☐ Getting Started: In this section include the link to your deployed game and any instructions you deem important.
 
-☐ Next Steps: Utilize back-end technologies to incorporate userNames and saveFiles for users to return and load games they left of on. Ways to customize the color of the lights to the user's personal preference.
+☐ Next Steps: Utilize back-end technologies to incorporate userNames and saveFiles for users to return and load games they left of on. Ways to customize the color of the lights to the user's personal preference. Add the ability for the game to expand infinityly.
 
