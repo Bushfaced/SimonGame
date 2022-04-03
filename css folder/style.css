@@ -7,11 +7,18 @@ h2 {
     width: 8em
 }
 
+h3 {
+    text-align: right;
+    margin: 0;
+}
+
 main {
     display: flex;
     justify-content: center;
 }
-
+main > button {
+    display: inline;
+}
 footer {
     display: flex;
     justify-content: center;
