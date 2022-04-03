@@ -2,8 +2,17 @@ h1 {
     text-align: center;
 }
 
-h2.blocktext {
-    margin-left: auto;
-    margin-right: auto;
+h2 {
+    margin-left: 0;
     width: 8em
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
