@@ -1,5 +1,5 @@
 //*********/ CONSTANTS *****************/
-const colorChoices = [0, 1, 2]; //this holds the array for the possible choices
+const colorChoices = [0, 1, 2, 3]; //this holds the array for the possible choices
 
 
 
@@ -16,8 +16,8 @@ let playerChoices; //this compares each player click to the random sequence gene
 // the computer.
 let compTurn; //this stops the user from being able to interact with the page while the
 // computerPattern plays.
-//*********/ Event Listeners ***********/
 
+//*********/ Event Listeners ***********/
 document.querySelector('').addEventListener('click', handleButton)
 document.querySelector('');
 
