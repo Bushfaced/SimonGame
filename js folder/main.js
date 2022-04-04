@@ -18,7 +18,7 @@ let compTurn; //this stops the user from being able to interact with the page wh
 // computerPattern plays.
 
 //*********/ Event Listeners ***********/
-document.getElementById('colorBtns').addEventListener('click', comparePattern) //example event listener with possible function name
+document.getElementById('colorBtns').addEventListener('click', comparePattern) //example event listener
 document.querySelector('');
 
 // ******function********* //
@@ -27,7 +27,7 @@ function comparePattern() {
 
 }
 
-function blinkColor(color) { //need to make this my own
+function blinkColor(color) { //need to make this my own, but for making the lights flash
     let colorButton = document.getElementById(color);
     colorButton.style.background = *highlightColor*;
     if(highlightColor == colorButton.style.background){

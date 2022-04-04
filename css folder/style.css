@@ -2,18 +2,16 @@ h1 {
     text-align: center;
 }
 
-h2 {
+.sidenav {
+    height: 100%;
     margin-left: 0;
-    width: 8em
+    width: 8em;
+    position: fixed;
 }
 
 h3 {
     text-align: right;
     margin: 0;
-}
-
-main {
-    
 }
 
 #red {
@@ -32,7 +30,16 @@ main {
 
 #purple {
     background-color: rgb(87, 2, 87, .5);
-
+    
+}
+.colorBtns  {
+    height: 60vmin;
+    width: 40%;
+    margin: 1em auto 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* grid-template: 2fr 2fr / 2fr 2fr; */
+    
 }
 
 footer {
@@ -40,27 +47,3 @@ footer {
     justify-content: center;
 }
 
-.colorBtns  {
-    display: flex;
-    justify-content: center;
-    min-height: 8vmin;
-    min-width: 20vmin;
-}
-
-/* .container {
-    height: 60vmin;
-    width: 40%;
-    margin: 1em auto 0;
-    display: grid;
-    grid-template: 2fr 2fr / 2fr 2fr;
-    grid-gap: 20px;
-} */
-
-/* button {
-    margin: 1em auto 1em;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-gap: 20px;
-    text-align: center;
-} */
