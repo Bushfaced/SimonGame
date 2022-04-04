@@ -18,7 +18,7 @@ let compTurn; //this stops the user from being able to interact with the page wh
 // computerPattern plays.
 
 //*********/ Event Listeners ***********/
-document.querySelector('').addEventListener('click', handleButton)
+document.querySelector('').addEventListener('click', handleButton) //example event listener with possible function name
 document.querySelector('');
 
 // ******function********* //

@@ -16,8 +16,9 @@ main {
     display: flex;
     justify-content: center;
 }
-main > button {
-    display: inline;
+
+main #0 {
+    background-color: rgb(151, 11, 11, .5);
 }
 footer {
     display: flex;
