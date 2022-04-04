@@ -18,11 +18,22 @@ let compTurn; //this stops the user from being able to interact with the page wh
 // computerPattern plays.
 
 //*********/ Event Listeners ***********/
-document.querySelector('').addEventListener('click', handleButton) //example event listener with possible function name
+document.getElementById('colorBtns').addEventListener('click', comparePattern) //example event listener with possible function name
 document.querySelector('');
 
 // ******function********* //
 
+function comparePattern() {
 
+}
 
+function blinkColor(color) { //need to make this my own
+    let colorButton = document.getElementById(color);
+    colorButton.style.background = *highlightColor*;
+    if(highlightColor == colorButton.style.background){
+      setTimeout(() => {colorButton.style.background = *white(i.e.)*}, 1000);
+    } else {
+      setTimeout(() => {colorButton.style.background = *originalColor*}, 1000);
+    }
+  }
 

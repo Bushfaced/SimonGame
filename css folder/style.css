@@ -13,14 +13,54 @@ h3 {
 }
 
 main {
-    display: flex;
-    justify-content: center;
+    
 }
 
-main #0 {
+#red {
     background-color: rgb(151, 11, 11, .5);
 }
+
+#green {
+    background-color: rgb(1, 81, 1, .5);
+    
+}
+
+#blue {
+    background-color: rgb(7, 7, 172, .5);
+    
+}
+
+#purple {
+    background-color: rgb(87, 2, 87, .5);
+
+}
+
 footer {
     display: flex;
     justify-content: center;
 }
+
+.colorBtns  {
+    display: flex;
+    justify-content: center;
+    min-height: 8vmin;
+    min-width: 20vmin;
+}
+
+/* .container {
+    height: 60vmin;
+    width: 40%;
+    margin: 1em auto 0;
+    display: grid;
+    grid-template: 2fr 2fr / 2fr 2fr;
+    grid-gap: 20px;
+} */
+
+/* button {
+    margin: 1em auto 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 20px;
+    text-align: center;
+} */
