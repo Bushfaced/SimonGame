@@ -25,7 +25,10 @@ document.querySelector('');
 
 function comparePattern() {
 
-}
+};
+
+function blinkColor();
+//********************* section of functions I could possibly use *********************//
 
 function blinkColor(color) { //need to make this my own, but for making the lights flash
     let colorButton = document.getElementById(color);
@@ -35,5 +38,10 @@ function blinkColor(color) { //need to make this my own, but for making the ligh
     } else {
       setTimeout(() => {colorButton.style.background = *originalColor*}, 1000);
     }
-  }
+  };
 
+  function getRandomRPS() { //change to getRandomColor? or getRandomPattern
+    const RPS = Object.keys(RPS_LOOKUP); //create constant like RPS_LOOKUP
+    const rndIdx = Math.floor(Math.random() * RPS.length); //re-define rndIdx to become rndColor maybe
+    return RPS[rndIdx]; //return new name for RPS and rndIdx
+  };
