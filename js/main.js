@@ -16,26 +16,46 @@ let playerTurn; //this compares each player click to the random sequence generat
 // the computer.
 let compTurn; //this stops the user from being able to interact with the page while the
 // computerPattern plays as well as initiates the turn 
+let pattern;
+
 
 //*********/ Event Listeners ***********/
-document.querySelector('.colorBtns').addEventListener('click', buttonsClicked); //example event listener
-// document.querySelector('');
+document.querySelector('.colorBtns').addEventListener('click', clickedButtons); //example event listener
+document.querySelector('#startBtn').addEventListener('click', startGame);
 // document.querySelector('main').addEventListener('click', handleChoice); //from class example on RPS
 // ******function********* //
-init();
+
 
 function init() {
-  const levels = [];
-  const intervals = [];
+  levels = 1;
+  const intervals = 350;
   const loseCondition = [];
   const playerTurn = [];
-  const compTurn = []; 
-
-
+  compTurn = true;
+  pattern = [Math.floor(Math.random() * 4)];
+  pattern = [1, 2, 3, 5, 0];
+  console.log(pattern);
 };
 
+function startGame() {
+  console.log('startGame');
+  init();
+  renderPattern();
+  console.log("back from renderPattern");
+  
+};
 
-function compTurn() {
+function renderPattern() {
+  // loop through pattern 
+  //     highlight correct button blinkColor()
+  //     pause intervals
+  setTimeout(function(){ 
+      for(let i = 0; i < pattern.length; i++) {
+        console.log('i = ' + i);
+      console.log('done sleeping');
+      compTurn = false;
+    }, 1000);
+  }
 
 };
 
@@ -43,80 +63,23 @@ function blinkColor() {
 
 };
 
-function buttonsClicked() {
-  if (btnsClicked === compTurn) {
-    return 'Level Won! Great memory'; 
-  } else {
-    return 'You lose!';
-  } 
+function clickedButtons(evt) {
+  if (compTurn === false) {
+    
+    pattern[pattern.length] = Math.floor(Math.random() * 4);
+    levels++;
+    console.log(pattern);
+    console.log(levels);
+    console.log(evt);
+  }
+  
+  // if (btnsClicked === compTurn) {
+    //   return 'Level Won! Great memory'; 
+  // } else {
+  //   return 'You lose!';
+  // } 
     // console.log(btnsClicked);
 };
-
-
-
-//********************* section of functions I could possibly use *********************//
-
-// function blinkColor(color) { //need to make this my own, but for making the lights flash
-//     let colorButton = document.getElementById(color);
-//     colorButton.style.background = *highlightColor*;
-//     if(highlightColor == colorButton.style.background){
-//       setTimeout(() => {colorButton.style.background = *white(i.e.)*}, 1000);
-//     } else {
-//       setTimeout(() => {colorButton.style.background = *originalColor*}, 1000);
-//     }
-// };
-
-// function getRandomRPS() { //change to getRandomColor? or getRandomPattern
-//     const RPS = Object.keys(RPS_LOOKUP); //create constant like RPS_LOOKUP
-//     const rndIdx = Math.floor(Math.random() * RPS.length); //re-define rndIdx to become rndColor maybe
-//     return RPS[rndIdx]; //return new name for RPS and rndIdx
-// };
-
-
-// function renderCountdown(cb) { //possibly used to take whether user beat the level or not and display the level count to that button
-//     let count = 3;
-//     countdownEl.textContent = count;
-//     countdownEl.style.visibility = 'visible';
-//     countdownAudio.currentTime = 0;
-//     countdownAudio.play();
-//     const timerId = setInterval(function () {
-//       count--;
-//       if (count <= 0) {
-//         clearInterval(timerId);
-//         countdownEl.style.visibility = 'hidden';
-//         cb();
-//       } else {
-//         countdownEl.textContent = count;
-//       }
-//     }, 1000);
-// };
-
-
-// function handleChoice(evt) { //maybe I could use this to handle to comparison of patternDisplayed to userClickedPattern?
-//     if (evt.target.tagName !== 'BUTTON') return;
-//     renderCountdown(function() {
-//       results.p = evt.target.innerText.toLowerCase();
-//       results.c = getRandomRPS();
-//       if (results.p === results.c) {
-//         winner = 't';
-//       } else {
-//         winner = RPS_LOOKUP[results.p].beats === results.c ? 'p' : 'c';
-//       }
-//       scores[winner]++;
-//       render();
-//     });
-// }
-
-
-
-
-// function genRandColor() { //Amar example of how to expand rounds
-//   let rand = Math.random() * (3 - 0 + 1) + 0;
-//   let randRound = Math.floor(rand)
-//   return randRound;
-// }
-
-
 
 
 
