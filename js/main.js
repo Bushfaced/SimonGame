@@ -25,10 +25,19 @@ document.querySelector('.colorBtns').addEventListener('click', buttonsClicked); 
 init();
 
 function init() {
-  const btnsClicked = compTurn.length;
+  const levels = [];
+  const intervals = [];
+  const loseCondition = [];
+  const playerTurn = [];
+  const compTurn = []; 
 
-}
 
+};
+
+
+function compTurn() {
+
+};
 
 function blinkColor() {
 
@@ -43,9 +52,6 @@ function buttonsClicked() {
     // console.log(btnsClicked);
 };
 
-function compTurn() {
-
-};
 
 
 //********************* section of functions I could possibly use *********************//
