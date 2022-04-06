@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
-    <title>Simon Says</title>
 </head>
 <body>
-    <h1><u>Welcome to Simon</u></h1>
-    <section>
-        <div class="sideNav">
-            <h2><u>Rules:</u></h2>
-            <h2>
-                Click <button id="startBtn">Start</button> to begin the game. Mimick the light sequence by clicking each color to beat the level. See how far you can go!
-            </h2>
-        </div>
-    </section>
-    <div class="sideNav2">
-        <h3>
-            <u>Level:</u><br>
-            <button id="levelBtn">1</button>
-        </h3>
-    </div>
+    <h1 id="header">Welcome to Simon</h1>
+    <h2 id="message"></h2>
+    <h3 id="round">round</h3>
     <main>
-        <div class="colorBtns">
-            <button id="red"> </button>
-            <button id="green"> </button>
-            <button id="blue"> </button>
-            <button id="purple"> </button>
+        <article>
+        <div class="container">
+        <button id="red"></button>
+        <button id="green"></button>
+        <button id="blue"></button>
+        <button id="purple"></button>
         </div>
+        </article>
+        <button id="start-button">START</button>
     </main>
-    <footer>
-        <br><button id="playAgainBtn">Play Again?</button>
-    </footer>
+    </div> 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

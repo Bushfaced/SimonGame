@@ -60,7 +60,9 @@
 //   return randRound;
 // }
 
-
+// let delay = 500;
+  // compTurn = true;
+  // pattern = [Math.floor(Math.random() * 4)];
 
 
 
