@@ -17,4 +17,3 @@ https://bushfaced.github.io/SimonGame/
 
 ## Next Steps: 
 Utilizing back-end technologies to incorporate userNames and saveFiles for users to return and load games they left off on. Add sound in cordination with lights. Have audible win and loss messages.
-
