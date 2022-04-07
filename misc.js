@@ -4,7 +4,7 @@
 //     let colorButton = document.getElementById(color);
 //     colorButton.style.background = highlightColor;
 //     if(highlightColor == colorButton.style.background){
-//       setTimeout(() => {colorButton.style.background = white}, 1000);
+//       
 //     } else {
 //       setTimeout(() => {colorButton.style.background = originalColor}, 1000);
 //     }
