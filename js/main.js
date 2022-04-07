@@ -70,12 +70,11 @@ function clickedButtons(evt) {
     let colorIndex = colors.indexOf(buttonColor);
     // console.log('colorIndex = ' + colorIndex);
     if (isIncorrect(colorIndex)) {
-      // this.message.innerText = 'You Lose!';
       compTurn = true;
     } else {
       playerButtonCount++;
       if (playerButtonCount === level) {
-        // this.message.innerText = 'You beat the level!'
+        message.innerText
         compTurn = true;
         initTurn();
       }
