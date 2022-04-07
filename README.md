@@ -4,7 +4,7 @@ Rules: Repeat the light sequence displayed by the computer and advance to the ne
 
 History: Invented by Ralph H. Baer and Howard J. Morrison, Simon was an electronic game produced by Milton Bradley (now Hasbro) with flashing lights in conjunction with audible tones. The game launched in 1978 at Studio 54 in New York City. It was an immediate success, becoming a pop culture symbol of the 1970s and 1980s until it's popularity waned in the 1990s. Even with it's popularity waning as more video-based technologies take over, Simon is still available at your local Target and many more stores.
 
-## Screenshot(s): 
+## Screenshot: 
 Link to WireFrame: https://raw.githubusercontent.com/Bushfaced/SimonGame/main/imgs/Screen%20Shot%202022-04-04%20at%204.35.00%20PM.png
 
 ## Technologies Used: 
