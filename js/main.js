@@ -1,11 +1,11 @@
-const colors = ['red', 'green', 'blue', 'purple']; 
+const colors = ['red', 'green', 'blue', 'purple'];
 const flashColors = ['pink', 'limegreen', 'cyan', 'lavender'];
 
 //*********/ STATE VARIABLES ***********/
-let results; 
-let delay; 
-let playerButtonCount; 
-let compTurn; 
+let results;
+let delay;
+let playerButtonCount;
+let compTurn;
 let pattern = [];
 let level;
 
@@ -31,9 +31,7 @@ function getRandomColor() {
   return Math.floor(Math.random() * 4);
 }
 
-// rename this to verbNoun
 function initTurn() {
-  // set color pattern for level 1
   level++;
   document.querySelector('#levelBtn').innerText = level;
   pattern.push(getRandomColor());
@@ -47,7 +45,6 @@ function initTurn() {
 // link to original code: https://stackoverflow.com/a/30865640/18523110
 function renderPattern(i) {
   if (i < pattern.length) {
-    //    flash the color
     blinkColor(pattern[i]);
     setTimeout(() => {
       i++;
@@ -66,9 +63,8 @@ function blinkColor(color) {
 
 function clickedButtons(evt) {
   if (compTurn === false) {
-    let buttonColor = evt.target.id;    
+    let buttonColor = evt.target.id;
     let colorIndex = colors.indexOf(buttonColor);
-    // console.log('colorIndex = ' + colorIndex);
     if (isIncorrect(colorIndex)) {
       document.getElementById('message').style.display = "block";
       message.innerText = message.textContent = 'You lost!';
@@ -82,7 +78,7 @@ function clickedButtons(evt) {
         initTurn();
       }
     }
-    
+
   }
 };
 
@@ -91,7 +87,7 @@ function isIncorrect(colorIndex) {
     return true;
   }
   return false;
-}
+};
 
 function playAgain() {
   startGame();

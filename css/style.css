@@ -1,9 +1,14 @@
 #playAgainBtn {
-    color: rgb(169, 18, 18);
+    color: red;
 }
 
 h1 {
     text-align: center;
+}
+
+#message {
+    text-align: center;
+    color: rgb(255, 0, 0);
 }
 
 .sideNav {
@@ -26,26 +31,26 @@ h1 {
 #green {
     background-color: rgb(1, 81, 1, .5);
     border-top-right-radius: 100%;
-    
+
 }
 
 #blue {
     background-color: rgb(7, 7, 172, .5);
-    border-bottom-left-radius: 100%;   
+    border-bottom-left-radius: 100%;
 }
 
 #purple {
     background-color: rgb(87, 2, 87, .5);
     border-bottom-right-radius: 100%;
-    
+
 }
 
-.colorBtns  {
+.colorBtns {
     height: 60vmin;
     width: 40%;
     margin: 1em auto;
     display: grid;
-    grid-template-columns: 2fr 2fr;   
+    grid-template-columns: 2fr 2fr;
 }
 
 footer {
@@ -56,4 +61,6 @@ footer {
 #levelBtn {
     position: relative;
     pointer-events: none;
-};
+}
+
+;
