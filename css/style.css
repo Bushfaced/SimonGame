@@ -31,8 +31,11 @@ h1 {
 
 #blue {
     background-color: rgb(7, 7, 172, .5);
-    border-bottom-left-radius: 100%;
-    
+    border-bottom-left-radius: 100%;   
+}
+
+.blueFlash {
+    background-color: blueviolet;
 }
 
 #purple {
