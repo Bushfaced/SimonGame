@@ -16,5 +16,5 @@ Click the below link to play Simon Says and have fun!
 https://bushfaced.github.io/SimonGame/
 
 ## Next Steps: 
-Utilize back-end technologies to incorporate userNames and saveFiles for users to return and load games they left of on. Ways to customize the color of the lights to the user's personal preference. Add the ability for the game to expand infinityly past 15 levels.
+Utilizing back-end technologies to incorporate userNames and saveFiles for users to return and load games they left off on. Add sound in cordination with lights. Have audible win and loss messages.
 
