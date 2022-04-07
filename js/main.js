@@ -1,5 +1,5 @@
 const colors = ['red', 'green', 'blue', 'purple']; 
-const flashColors = ['white', 'yellow', 'cyan', 'black'];
+const flashColors = ['pink', 'limegreen', 'cyan', 'lavender'];
 
 //*********/ STATE VARIABLES ***********/
 let results; 
@@ -14,9 +14,7 @@ document.querySelector('.colorBtns').addEventListener('click', clickedButtons);
 document.querySelector('#startBtn').addEventListener('click', startGame);
 document.querySelector('#playAgainBtn').addEventListener('click', playAgain);
 
-
-//**********/ Cache *****************/
-const message = document.querySelector("#message")
+const message = document.querySelector('#message');
 
 // ******function********* //
 // This function sets up the initial conditions for a new game of Simon Says
@@ -32,6 +30,7 @@ function getRandomColor() {
   return Math.floor(Math.random() * 4);
 }
 
+// rename this to verbNoun
 function initTurn() {
   // set color pattern for level 1
   level++;
@@ -71,14 +70,14 @@ function clickedButtons(evt) {
     let colorIndex = colors.indexOf(buttonColor);
     // console.log('colorIndex = ' + colorIndex);
     if (isIncorrect(colorIndex)) {
-      // Fail the game you're a loser!!!
-      // Call your loser function, which ends the game
+      // this.message.innerText = 'You Lose!';
       compTurn = true;
     } else {
       playerButtonCount++;
       if (playerButtonCount === level) {
+        // this.message.innerText = 'You beat the level!'
         compTurn = true;
-        computerTurn();
+        initTurn();
       }
     }
     

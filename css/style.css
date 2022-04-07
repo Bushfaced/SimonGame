@@ -34,15 +34,12 @@ h1 {
     border-bottom-left-radius: 100%;   
 }
 
-.blueFlash {
-    background-color: blueviolet;
-}
-
 #purple {
     background-color: rgb(87, 2, 87, .5);
     border-bottom-right-radius: 100%;
     
 }
+
 .colorBtns  {
     height: 60vmin;
     width: 40%;
