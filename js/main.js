@@ -51,7 +51,7 @@ function renderPattern(i) {
       i++;
       renderPattern(i);
     }, 350);
-  };
+  }
 };
 
 function blinkColor(color) {
