@@ -1,4 +1,3 @@
-//*********/ CONSTANTS *****************/
 const colors = ['red', 'green', 'blue', 'purple']; //this holds the array for the possible choices
 const flashColors = ['white', 'yellow', 'cyan', 'black'];
 
@@ -106,4 +105,3 @@ function isIncorrect(colorIndex) {
 function playAgain() {
   startGame();
 };
-
