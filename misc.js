@@ -17,23 +17,23 @@
 // };
 
 
-// function renderCountdown(cb) { //possibly used to take whether user beat the level or not and display the level count to that button
-//     let count = 3;
-//     countdownEl.textContent = count;
-//     countdownEl.style.visibility = 'visible';
-//     countdownAudio.currentTime = 0;
-//     countdownAudio.play();
-//     const timerId = setInterval(function () {
-//       count--;
-//       if (count <= 0) {
-//         clearInterval(timerId);
-//         countdownEl.style.visibility = 'hidden';
-//         cb();
-//       } else {
-//         countdownEl.textContent = count;
-//       }
-//     }, 1000);
-// };
+function renderCountdown(cb) { //possibly used to take whether user beat the level or not and display the level count to that button
+    let count = 3;
+    countdownEl.textContent = count;
+    countdownEl.style.visibility = 'visible';
+    countdownAudio.currentTime = 0;
+    countdownAudio.play();
+    const timerId = setInterval(function () {
+      count--;
+      if (count <= 0) {
+        clearInterval(timerId);
+        countdownEl.style.visibility = 'hidden';
+        cb();
+      } else {
+        countdownEl.textContent = count;
+      }
+    }, 1000);
+};
 
 
 // function handleChoice(evt) { //maybe I could use this to handle to comparison of patternDisplayed to userClickedPattern?
@@ -60,9 +60,7 @@
 //   return randRound;
 // }
 
-// let delay = 500;
-  // compTurn = true;
-  // pattern = [Math.floor(Math.random() * 4)];
+
 
 
 

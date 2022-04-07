@@ -31,9 +31,6 @@ const purple = document.querySelector('#purple')
 const startButton = document.querySelector('#start-button')
 const roundCount = document.querySelector('#round')
 const message = document.querySelector('#message')
-// document.querySelector('.colorBtns').addEventListener('click', clickedButtons);
-// document.querySelector('#startBtn').addEventListener('click', startGame);
-// document.querySelector('#playAgainBtn').addEventListener('click', playAgain);
 
 // ******function********* //
 
@@ -78,9 +75,10 @@ function init() {
   }, delay);
   
   compTurn = true;
-  intervals = setInterval(playerTurn, 200);
+  intervals = setInterval(playerTurn, 2000);
 };
 
+// flash = 0  round = 1
 function playerTurn() {
   if (flash === round) {
     clearInterval(intervals);
@@ -139,6 +137,10 @@ function clearColor() {
   purple.style.backgroundColor = "purple";
   green.style.backgroundColor = "green";
 }
+
+startButton.addEventListener('click', (event) => {
+  init()
+});
 
 red.addEventListener('click', (event) => {
   if (flash) {
@@ -268,7 +270,9 @@ function render() {
 // function clickedButtons(evt) {
 //   if (compTurn === false) {
 //     delay = 350;
-//     pattern[pattern.length] = Math.floor(Math.random() * 4);
+
+//     pattern.push(Math.floor(Math.random() * 4));  
+//     [pattern.length] = Math.floor(Math.random() * 4);
 //     results++;
 //     // console.log(pattern);
 //     // console.log(levels);
