@@ -1,3 +1,5 @@
+//*********/ CONSTANTS *****************/
+
 const colors = ['red', 'green', 'blue', 'purple'];
 const flashColors = ['pink', 'limegreen', 'cyan', 'lavender'];
 
@@ -13,11 +15,10 @@ let level;
 document.querySelector('.colorBtns').addEventListener('click', clickedButtons);
 document.querySelector('#startBtn').addEventListener('click', startGame);
 document.querySelector('#playAgainBtn').addEventListener('click', playAgain);
-
 const message = document.querySelector('#message');
 
-// ******function********* //
-// This function sets up the initial conditions for a new game of Simon Says
+// ****** FUNCTIONS ********* //
+
 function startGame() {
   level = 0;
   delay = 500;
@@ -29,7 +30,7 @@ function startGame() {
 
 function getRandomColor() {
   return Math.floor(Math.random() * 4);
-}
+};
 
 function initTurn() {
   level++;
@@ -39,7 +40,7 @@ function initTurn() {
   renderPattern(0);
   compTurn = false;
   playerButtonCount = 0;
-}
+};
 
 // what I googled: javascript loop through array with delay
 // link to original code: https://stackoverflow.com/a/30865640/18523110
@@ -50,7 +51,7 @@ function renderPattern(i) {
       i++;
       renderPattern(i);
     }, 350);
-  }
+  };
 };
 
 function blinkColor(color) {
@@ -76,16 +77,16 @@ function clickedButtons(evt) {
         message.innerText = message.textContent = 'Correct! Next!';
         compTurn = true;
         initTurn();
-      }
-    }
+      };
+    };
 
-  }
+  };
 };
 
 function isIncorrect(colorIndex) {
   if (colorIndex !== pattern[playerButtonCount]) {
     return true;
-  }
+  };
   return false;
 };
 

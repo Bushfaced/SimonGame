@@ -1,32 +1,32 @@
 #playAgainBtn {
     color: red;
-}
+};
 
 h1 {
     text-align: center;
-}
+};
 
 #message {
     text-align: center;
     color: rgb(255, 0, 0);
-}
+};
 
 .sideNav {
     height: 100%;
     margin-left: 0;
     width: 8em;
     position: fixed;
-}
+};
 
 .sideNav2 {
     text-align: right;
     margin: 0;
-}
+};
 
 #red {
     background-color: rgb(151, 11, 11, .5);
     border-top-left-radius: 100%;
-}
+};
 
 #green {
     background-color: rgb(1, 81, 1, .5);
@@ -37,13 +37,13 @@ h1 {
 #blue {
     background-color: rgb(7, 7, 172, .5);
     border-bottom-left-radius: 100%;
-}
+};
 
 #purple {
     background-color: rgb(87, 2, 87, .5);
     border-bottom-right-radius: 100%;
 
-}
+};
 
 .colorBtns {
     height: 60vmin;
@@ -51,16 +51,15 @@ h1 {
     margin: 1em auto;
     display: grid;
     grid-template-columns: 2fr 2fr;
-}
+};
 
 footer {
     display: flex;
     justify-content: center;
-}
+};
 
 #levelBtn {
     position: relative;
     pointer-events: none;
-}
+};
 
-;
