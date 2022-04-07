@@ -23,6 +23,7 @@ function startGame() {
   delay = 500;
   compTurn = true;
   pattern = [];
+  document.getElementById('message').style.display = "none";
   initTurn();
 };
 
@@ -56,7 +57,6 @@ function renderPattern(i) {
 };
 
 function blinkColor(color) {
-  // console.log("Flash button: " + colors[color]);
   let button = document.querySelector('#' + colors[color]);
   button.style.backgroundColor = flashColors[color];
   setTimeout(() => {
@@ -70,11 +70,14 @@ function clickedButtons(evt) {
     let colorIndex = colors.indexOf(buttonColor);
     // console.log('colorIndex = ' + colorIndex);
     if (isIncorrect(colorIndex)) {
+      document.getElementById('message').style.display = "block";
+      message.innerText = message.textContent = 'You lost!';
       compTurn = true;
     } else {
       playerButtonCount++;
       if (playerButtonCount === level) {
-        message.innerText
+        document.getElementById('message').style.display = "block";
+        message.innerText = message.textContent = 'Correct! Next!';
         compTurn = true;
         initTurn();
       }
