@@ -36,7 +36,6 @@ function initTurn() {
   level++;
   document.querySelector('#levelBtn').innerText = level;
   pattern.push(getRandomColor());
-  console.log(pattern);
   renderPattern(0);
   compTurn = false;
   playerButtonCount = 0;
