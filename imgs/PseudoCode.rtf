@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww29740\viewh15760\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Simon Pseudocode\
+\
+
+\f1\b \ul HTML/Basic CSS
+\f0\b0 \ulnone \
+when navigating to the page, you see the following initial styling:\
+\
+-at the top, <h1> "Welcome to Simon Says" \
+\
+-the rules display along the left hand side under a message that displays as "Rules:", then the rules are listed underneath in sentence format.\
+\
+-A flex box of the 4 lights in the center of the page (column style), each in an individual square that lights up\
+\
+-on the right side of the browser is the level you are on and a message that displays when you win a level between the level you are on and the next level button\
+\
+-when you win the round, the game displays a "Next Level" button to continue in the above position\
+\
+-at the bottom centered to the game squares is a "Play Again?" button to reset and restart the game after a 500ms interval\
+\
+-the users progress is locally stored to allow them to continue if they stop mid game (later enhancement will be to add the ability to load a previous game or start a new one, maybe the load option has a player option so you can load the game dependent on the player playing)\
+\
+\
+\
+
+\f1\b \ul Basic coding needed: (followed by possible path)
+\f0\b0 \ulnone \
+\
+init() \{\
+\'a0 \'a0 // Start Game at level 1\
+\'a0 \'a0// Reset buttons (clears last game and resets to level 1)\
+  // Not sure if I would need to initialize the next level button yet or not. Maybe just a html button with a separate function attached\
+\}\
+\
+\
+// the game starts when this button event occurs\
+\
+startLevel() \{\
+\'a0 // pattern = setLevelPattern(level)\
+\'a0 // playbackPattern(pattern)\
+\}\
+\
+\
+//This function determines the order of the lights flash\
+\
+Const lightsFlash = function () \{\
+     //set interval of flashes\
+     //patternDisplayed = Math.random(figure out random pattern code)\
+\}\
+\
+//This function sets and compares win/lose conditions\
+\
+Const levelWon = () \{\
+     //an if else or function to say userButtonClick === patternDisplayed; return \'91Level Complete\'92; (on side bar where level count and \
+next level buttons are)\
+     //\
+    //patternWrong return \'91Meme of Ace Ventura saying \'93Loser\'94 (or just, \'93You lost!\'94 If I can\'92t figure that out)\
+\}\
+\
+//This type of function sets the pattern to be followed by user\
+\
+patternDisplayed(level) \{\
+  return array of size level = increasingPatternSize by 1 each round and values (0 -3)\
+    //make up an iteration where each levelWon increases the amount of lights flashing for the next level the user plays\
+\}\
+\
+//This variable stores which level they are on and displays it in the levelCount area\
+currentLevel = levelWon === levelWon++ then display winMessage, else display lostMessage\
+\
+\
+\
+This function sets the interval at which the lights flash and the total number per round (iterate 1 additional light per round)\
+ Const lightIntervals = intervals =>  setTimeout? Not sure what I\'92m going to use yet\
+\
+\
+//This function sets the delay for the interval between starting the game and the next level\
+\
+\
+\
+//if they win, display next level button else display playAgain button\
+\
+\
+\
+//State Variables:\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+}
