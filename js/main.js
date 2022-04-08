@@ -5,7 +5,6 @@ const flashColors = ['pink', 'limegreen', 'cyan', 'lavender'];
 
 //*********/ STATE VARIABLES ***********/
 let results;
-let delay;
 let playerButtonCount;
 let compTurn;
 let pattern = [];
@@ -21,11 +20,12 @@ const message = document.querySelector('#message');
 
 function startGame() {
   level = 0;
-  delay = 500;
   compTurn = true;
   pattern = [];
-  document.getElementById('message').style.display = "none";
-  initTurn();
+  message.innerText = message.textContent = 'Starting...';
+  setTimeout(() => {
+    initTurn();
+  }, 500);
 };
 
 function getRandomColor() {
@@ -49,7 +49,7 @@ function renderPattern(i) {
     setTimeout(() => {
       i++;
       renderPattern(i);
-    }, 350);
+    }, 500);
   }
 };
 
@@ -68,6 +68,7 @@ function clickedButtons(evt) {
     if (isIncorrect(colorIndex)) {
       document.getElementById('message').style.display = "block";
       message.innerText = message.textContent = 'You lost!';
+      document.getElementById('playAgainBtn').style.visibility = 'visible';
       compTurn = true;
     } else {
       playerButtonCount++;
@@ -90,5 +91,6 @@ function isIncorrect(colorIndex) {
 };
 
 function playAgain() {
+  document.getElementById('playAgainBtn').style.visibility = 'hidden';
   startGame();
 };

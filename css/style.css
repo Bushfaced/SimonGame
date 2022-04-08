@@ -1,5 +1,8 @@
 #playAgainBtn {
     color: red;
+    min-height: 8vmin;
+    min-width: 10vmin;
+    visibility: hidden;
 }
 
 h1 {
@@ -14,7 +17,7 @@ h1 {
 .sideNav {
     height: 100%;
     margin-left: 0;
-    width: 8em;
+    width: 22em;
     position: fixed;
 }
 
